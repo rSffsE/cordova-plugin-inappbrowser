@@ -968,13 +968,6 @@
 @implementation CDVInAppBrowserNavigationController : UINavigationController
 
 #pragma mark CDVScreenOrientationDelegate
-- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion
-{
-    if ( self.presentedViewController)
-    {
-        [super dismissViewControllerAnimated:flag completion:completion];
-    }
-}
 
 - (BOOL)shouldAutorotate
 {
@@ -982,6 +975,14 @@
         return [self.orientationDelegate shouldAutorotate];
     }
     return YES;
+}
+
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion
+{
+    if (self.presentedViewController)
+    {
+        [super dismissViewControllerAnimated:flag completion:completion];
+    }
 }
 
 - (NSUInteger)supportedInterfaceOrientations

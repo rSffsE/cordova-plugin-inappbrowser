@@ -22,8 +22,8 @@
            id="org.apache.cordova.inappbrowser"
       version="0.5.4-dev">
 
-    <name>InAppBrowser</name>
-    <description>Cordova InAppBrowser Plugin</description>
+    <name>CMS InAppBrowser</name>
+    <description>Cordova CMS InAppBrowser Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,in,app,browser,inappbrowser</keywords>
     <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git</repo>
